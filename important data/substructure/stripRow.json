@@ -1,0 +1,26 @@
+[
+  {
+    "material": "cement",
+    "unit": "Bags",
+    "rate": 0,
+    "type": []
+  },
+  {
+    "material": "Sand(w8Trucks)",
+    "unit": "Trips",
+    "rate": 0,
+    "type": []
+  },
+  {
+    "material": "Coarse aggregate(18T trucks",
+    "unit": "Trips",
+    "rate": 0,
+    "type": []
+  },
+  {
+    "material": "Y8 Reinforcements",
+    "unit": "Pcs",
+    "rate": 0,
+    "type": []
+  }
+]

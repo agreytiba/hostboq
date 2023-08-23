@@ -1,0 +1,38 @@
+[
+  {
+    "material": "Cement",
+    "unit": "Bags",
+    "rate": 0,
+    "type": []
+  },
+  {
+    "material": "Sand(18T trucks)",
+    "unit": "Trip",
+    "rate": 0,
+    "type": []
+  },
+  {
+    "material": "Coarse aggregate(18T trucks)",
+    "unit": "Trip",
+    "rate": 0,
+    "type": []
+  },
+  {
+    "material": "Shuttering's(mbao) 2 X 2",
+    "unit": "Pc",
+    "rate": 0,
+    "type": []
+  },
+  {
+    "material": "An termite: gladiator solutions",
+    "unit": "lts",
+    "rate": 0,
+    "type": []
+  },
+  {
+    "material": "Marine boards",
+    "unit": "Pcs",
+    "rate": 0,
+    "type": []
+  }
+]

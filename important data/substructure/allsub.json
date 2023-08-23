@@ -1,0 +1,99 @@
+[
+  {
+    "material": "Reinforcements 16mm",
+    "unit": "Pcs",
+    "rate": 0,
+    "type": ["beam"]
+  },
+  {
+    "material": "Reinforcements 8mm",
+    "unit": "Pcs",
+    "rate": 0,
+    "type": ["beam"]
+  },
+  {
+    "material": "Sand-18T",
+    "unit": "Trip",
+    "rate": 0,
+    "type": ["blinding","pad","wall","concrete"]
+  },
+  {
+    "material": "Cement",
+    "unit": "Bags",
+    "rate": 0,
+    "type": ["blinding","strip","pad","concrete"]
+  },
+ 
+  {
+    "material": "Reinforcement 16mm-high tensile",
+    "unit": "Pcs",
+    "rate": 0,
+    "type": ["pad"]
+  },
+  {
+    "material": "Reinforcement 8mm-high tensile",
+    "unit": "Pcs",
+    "rate": 0,
+    "type": ["strip","pad"]
+  },
+  {
+    "material": "Shuttering's(mbao) 2 X 2",
+    "unit": "Pcs",
+    "rate": 0,
+    "type": ["concrete"]
+  },
+  {
+    "material": "An termite: gladiator solutions",
+    "unit": "lts",
+    "rate": 0,
+    "type": ["concrete"]
+  },
+  {
+    "material": "Marine boards",
+    "unit": "Pcs",
+    "rate": 0,
+    "type": ["concrete"]
+  },
+  {
+    "material": "Sand(w8Trucks)",
+    "unit": "Trips",
+    "rate": 0,
+    "type": ["strip"]
+  },
+  {
+    "material": "Coarse aggregate(18T trucks",
+    "unit": "Trips",
+    "rate": 0,
+    "type": ["blinding","strip","pad","concrete"]
+  },
+  {
+    "material": "Y8 Reinforcements",
+    "unit": "Pcs",
+    "rate": 0,
+    "type": []
+  },
+  {
+    "material": "Sand cushion(18Tucks",
+    "unit": "Trips",
+    "rate": 0,
+    "type": ["blinding"]
+  },
+  {
+    "material": "Walls :230mm thick",
+    "unit": "Blocks",
+    "rate": 0,
+    "type": ["wall"]
+  },
+  {
+    "material": "Fill(kifusi), 18T trucks",
+    "unit": "Trip",
+    "rate": 0,
+    "type": ["wall"]
+  },
+  {
+    "material": "Hard core(mawe): 150mm bed(18T)",
+    "unit": "Trip",
+    "rate": 0,
+    "type": ["wall"]
+  }
+]

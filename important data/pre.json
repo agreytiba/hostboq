@@ -1,0 +1,43 @@
+[
+  {
+    "material": "Timber 2 x 2",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Manila String",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Timber Nails",
+    "unit": "Kg",
+    "rate": 0
+  },
+  {
+    "material": "Limestone",
+    "unit": "Bags",
+    "rate": 0
+  },
+  {
+    "material": "Site Clearance",
+    "unit": "Unit",
+    "rate": 0
+  },
+  {
+    "material": "Water Tank-100L",
+    "unit": "Tank",
+    "rate": 0
+  },
+  {
+    "material": "Permit Processing",
+    "unit": "Unit",
+    "rate": 0
+  },
+  {
+    "material": "Water",
+     "unit": "0",
+     "rate": 0
+  }
+]
+

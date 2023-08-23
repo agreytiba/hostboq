@@ -1,0 +1,32 @@
+[
+  {
+    "material": "Sand-18T",
+    "unit": "Trip",
+    "rate": 0,
+    "type": []
+  },
+  {
+    "material": "Cement",
+    "unit": "Bags",
+    "rate": 0,
+    "type": []
+  },
+  {
+    "material": "Coarse aggregates (18T)",
+    "unit": "Trip",
+    "rate": 0,
+    "type": []
+  },
+  {
+    "material": "Reinforcement 16mm-high tensile",
+    "unit": "Pcs",
+    "rate": 0,
+    "type": []
+  },
+  {
+    "material": "Reinforcement 8mm-high tensile",
+    "unit": "Pcs",
+    "rate": 0,
+    "type": []
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "material": "Walls :230mm thick",
+    "unit": "Blocks",
+    "rate": 0,
+    "type": []
+  },
+  {
+    "material": "Cement",
+    "unit": "Bags",
+    "rate": 0,
+    "type": []
+  },
+  {
+    "material": "Sand (18T trucks)",
+    "unit": "Trip",
+    "rate": 0,
+    "type": []
+  },
+  {
+    "material": "Fill(kifusi), 18T trucks",
+    "unit": "Trip",
+    "rate": 0,
+    "type": []
+  },
+  {
+    "material": "Hard core(mawe): 150mm bed(18T)",
+    "unit": "Trip",
+    "rate": 0,
+    "type": []
+  }
+]
