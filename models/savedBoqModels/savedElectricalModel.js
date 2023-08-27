@@ -1,16 +1,17 @@
 const mongoose = require("mongoose");
-const savedpreSchema = mongoose.Schema(
+const savedElectricalSchema = mongoose.Schema(
   {
     mapId: {
       type: mongoose.Schema.Types.ObjectId,
       required: [true, "weka map id"],
        ref: "Map", 
     },
- isSaved: {
+    isSaved: {
       type: Boolean,
        default:false, 
     },
-    preData: [
+
+    electricData: [
       {
         quantity: {
           type: Number,
@@ -18,7 +19,7 @@ const savedpreSchema = mongoose.Schema(
         },
         materialId: {
           type: mongoose.Schema.Types.ObjectId,
-          ref: "Pre",   
+          ref: "Electrical",   
         },
       },
     ],
@@ -27,4 +28,4 @@ const savedpreSchema = mongoose.Schema(
     timestamps: true,
   }
 );
-module.exports = mongoose.model("Savedpre", savedpreSchema);
+module.exports = mongoose.model("SavedElectrical", savedElectricalSchema);

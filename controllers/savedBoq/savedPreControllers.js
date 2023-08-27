@@ -47,20 +47,20 @@ const updateSavedPre = asyncHandler(async (req, res) => {
     }
 
    // Find the index of the existing preData entry with matching materialId
-    const existingIndex = savedPre.preData.findIndex(data => data.materialId === materialId);
+    const existingIndex = savedPre.preData.findIndex(data => data.materialId == materialId);
 
     if (existingIndex !== -1) {
       // Update the quantity for the existing materialId
       savedPre.preData[existingIndex].quantity = quantity;
-      await savedPre.save();
+     const updatedSaved= await savedPre.save();
 
-      res.status(200).json(savedPre);
+      res.status(200).json(updatedSaved);
     }
     else {
       // Add quantity and materialId to preData array
       savedPre.preData.push({ quantity, materialId });
-      await savedPre.save();
-      res.status(200).json(savedPre);
+     const createdSaved= await savedPre.save();
+      res.status(200).json(createdSaved);
     }
 
   } catch (error) {

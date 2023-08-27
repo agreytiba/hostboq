@@ -133,8 +133,9 @@ app.use("/api/provider", require("./routes/providerRoutes"));
 app.use("/api/file", require("./routes/testRoutes"));
 app.use("/api/foundations", require("./routes/boqRoutes/foundationRoutes"));
 app.use("/api/orders", require("./routes/orderRoutes"));
+
+// boq data routes
 app.use("/api/pre", require("./routes/boqRoutes/PreliminilaryRoutes"));
-app.use("/api/savedpres", require("./routes/savedBoqRoutes/savedPreRoute"));
 app.use("/api/substructure", require("./routes/boqRoutes/SubstructureRoutes"));
 app.use("/api/walling", require("./routes/boqRoutes/wallingRoutes"));
 app.use("/api/roofing", require("./routes/boqRoutes/roofingRoutes"));
@@ -142,7 +143,24 @@ app.use("/api/blandering", require("./routes/boqRoutes/blanderingRoutes"));
 app.use("/api/gypsum", require("./routes/boqRoutes/gypsumRoutes"));
 app.use("/api/pvc", require("./routes/boqRoutes/pvcRoutes"));
 app.use("/api/skimming", require("./routes/boqRoutes/skimmingRoutes"));
+app.use("/api/finishing", require("./routes/boqRoutes/finishingRoutes"));
+app.use("/api/tiles", require("./routes/boqRoutes/tilesRoutes"));
+app.use("/api/plastering", require("./routes/boqRoutes/plasteringRoutes"));
+app.use("/api/electrical", require("./routes/boqRoutes/electricalRoutes"));
+app.use("/api/windows", require("./routes/boqRoutes/windowRoutes"));
+app.use("/api/doors", require("./routes/boqRoutes/doorRoutes"));
+app.use("/api/plumbing", require("./routes/boqRoutes/plumbingRoutes"));
 
+// boq saved routes
+app.use("/api/savedpres", require("./routes/savedBoqRoutes/savedPreRoute"));
+app.use("/api/savedfinishing", require("./routes/savedBoqRoutes/savedFinishingRoutes"));
+app.use("/api/savedelectrical", require("./routes/savedBoqRoutes/savedElectricalRoutes"));
+app.use("/api/savedgypsum", require("./routes/savedBoqRoutes/savedGypsumRoutes"));
+app.use("/api/savedplastering", require("./routes/savedBoqRoutes/savedPlasteringRoutes"));
+app.use("/api/savedroofing", require("./routes/savedBoqRoutes/savedRoofingRoutes"));
+app.use("/api/savedtiles", require("./routes/savedBoqRoutes/savedTilesRoutes"));
+app.use("/api/savedwalling", require("./routes/savedBoqRoutes/savedWallingRoutes"));
+app.use("/api/savedpvcs", require("./routes/savedBoqRoutes/savedPvc"));
 // use to change default error handler
 app.use(errorHandler);
 

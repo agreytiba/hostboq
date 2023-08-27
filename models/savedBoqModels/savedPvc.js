@@ -1,25 +1,25 @@
 const mongoose = require("mongoose");
-const savedpreSchema = mongoose.Schema(
+const savedSchema = mongoose.Schema(
   {
     mapId: {
       type: mongoose.Schema.Types.ObjectId,
       required: [true, "weka map id"],
        ref: "Map", 
     },
- isSaved: {
+     isSaved: {
       type: Boolean,
        default:false, 
     },
-    preData: [
+    pvcData: [
       {
         quantity: {
           type: Number,
-       default:0,
+        default:0,
         },
         materialId: {
           type: mongoose.Schema.Types.ObjectId,
-          ref: "Pre",   
-        },
+          ref: "PVC",   
+        }
       },
     ],
   },
@@ -27,4 +27,4 @@ const savedpreSchema = mongoose.Schema(
     timestamps: true,
   }
 );
-module.exports = mongoose.model("Savedpre", savedpreSchema);
+module.exports = mongoose.model("Savedpvc", savedSchema);

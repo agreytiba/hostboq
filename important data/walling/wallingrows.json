@@ -1,0 +1,62 @@
+[
+  {
+    "material": "Block(150mm)",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Cement",
+    "unit": "Bags",
+    "rate": 0
+  },
+  {
+    "material": "Sand 18T",
+    "unit": "Trips",
+    "rate": 0
+  },
+  {
+    "material": "Aggegate 18T",
+    "unit": "Trip",
+    "rate": 0
+  },
+  {
+    "material": "Timber 1x6",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Timber Nails",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Y12 Reinforcements",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Y8 Reinforcements",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "1X2 Shuttering(Ring Beam)",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Dpc",
+    "unit": "Roller",
+    "rate": 0
+  },
+  {
+    "material": "Binding wire",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Props(Mirunda)",
+    "unit": "Pcs",
+    "rate": 0
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "material": "Grills (1800x1700)",
+    "unit": "Number",
+    "rate": 0,
+    "type":"grill"
+  },
+  {
+    "material": "Grills (1800x2250)",
+    "unit": "Number",
+    "rate": 0,
+    "type":"grill"
+  },
+  {
+    "material": "Grills (800x800)",
+    "unit": "Number",
+    "rate": 0,
+    "type":"grill"
+  },
+  {
+    "material": "aluminium (1800x1700)",
+    "unit": "Number",
+    "rate": 0,
+    "type":"aluminium"
+  },
+  {
+    "material": "aluminium (1800x2250)",
+    "unit": "Number",
+    "rate": 0,
+    "type":"aluminium"
+  },
+  {
+    "material": "aluminium (800x800)",
+    "unit": "Number",
+    "rate": 0,
+    "type":"aluminium"
+  }
+]

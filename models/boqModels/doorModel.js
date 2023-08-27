@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const skimmingSchema = mongoose.Schema(
+const doorSchema = mongoose.Schema(
 	{
 		material: {
 			type: String,
@@ -13,11 +13,11 @@ const skimmingSchema = mongoose.Schema(
 		rate:{
             type:Number,
             default: 0,
-		},
-		type:[]
+        },
+        type:[]
 	},
 	{
 		timestamps: true
 	}
 );
-module.exports = mongoose.model('Skim', skimmingSchema);
+module.exports = mongoose.model('Door', doorSchema);

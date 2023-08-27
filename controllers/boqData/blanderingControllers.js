@@ -71,10 +71,10 @@ const getBlandering = asyncHandler( async(req,res)=>{
 // @route DELETE /api/blandering/:id
 // @access private
 const deleteBlandering = asyncHandler( async(req,res)=>{
-    const walling = await Bland.findById(req.params.id)
+    const blandering = await Bland.findById(req.params.id)
 
-    // check for the walling
-    if(!walling){
+    // check for the blandering
+    if(!blandering){
         res.status(400)
         throw new Error('error material not found')
     }

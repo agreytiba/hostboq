@@ -1,0 +1,56 @@
+[
+  {
+    "material": "frames (900x2500)",
+    "unit": "Number",
+    "rate": 4000,
+    "type": "frame"
+  },
+  {
+    "material": "frames (1300x2500)",
+    "unit": "Number",
+    "rate": 10000,
+    "type": "frame"
+  },
+  {
+    "material": "frames (800x800)",
+    "unit": "Number",
+    "rate": 10000,
+    "type": "frame"
+  },
+  {
+    "material": "shutter (900 x2500)",
+    "unit": "Number",
+    "rate": 4000,
+    "type": "shutter"
+  },
+  {
+    "material": "shutter (1300x2500)",
+    "unit": "Number",
+    "rate": 10000,
+    "type": "shutter"
+  },
+  {
+    "material": "shutter (800x800)",
+    "unit": "Number",
+    "rate": 10000,
+    "type": "shutter"
+  },
+  {
+    "material": "Hinges",
+    "unit": "Box",
+    "rate": 0,
+    "type": "shutter"
+  },
+  {
+    "material": "Mortice Locks",
+    "unit": "Pcs",
+    "rate": 0,"type": "shutter"
+  },
+  {
+    "material": "Barrel Bolts",
+    "unit": "Pcs",
+    "rate": 0,
+    "type": "shutter"
+  }
+]
+

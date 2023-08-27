@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const skimmingSchema = mongoose.Schema(
+const plasteringSchema = mongoose.Schema(
 	{
 		material: {
 			type: String,
@@ -14,10 +14,9 @@ const skimmingSchema = mongoose.Schema(
             type:Number,
             default: 0,
 		},
-		type:[]
 	},
 	{
 		timestamps: true
 	}
 );
-module.exports = mongoose.model('Skim', skimmingSchema);
+module.exports = mongoose.model('Plastering', plasteringSchema);

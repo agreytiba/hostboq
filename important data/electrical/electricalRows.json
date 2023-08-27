@@ -1,0 +1,87 @@
+[
+  {
+    "material": "Pvc conduit pipes",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Single square box",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Double rectangular box",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Round box",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Earth Rod",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "1.5mm cable",
+    "unit": "Roll",
+    "rate": 0
+  },
+  {
+    "material": "2.5mm cable",
+    "unit": "Roll",
+    "rate": 0
+  },
+  {
+    "material": "Ceiling light",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "1 way 1 gang switch",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "1 way 2 gang switch",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "1 way 3 gang switch",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Dp switch",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Cooker control unit",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Insulation tape",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Main Switch",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Circuit Breaker",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Ceiling Fans",
+    "unit": "Pcs",
+    "rate": 0
+  }
+]

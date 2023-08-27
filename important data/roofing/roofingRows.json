@@ -1,0 +1,72 @@
+[
+  {
+    "material": "2x4 Treated Timber",
+    "unit": "ft",
+    "rate": 0
+  },
+  {
+    "material": "2x2 Treated Timber",
+    "unit": "ft",
+    "rate": 0
+  },
+  {
+    "material": "1X10 Fascia board",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "4'nails",
+    "unit": "Kg",
+    "rate": 0
+  },
+  {
+    "material": "3'nails",
+    "unit": "Kg",
+    "rate": 0
+  },
+  {
+    "material": "2'nails",
+    "unit": "Kg",
+    "rate": 0
+  },
+  {
+    "material": "Galvanized wire",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Roofing Sheets(28 Gauge)",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Roofing valley & Cap",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Roofing Nails",
+    "unit": "kg",
+    "rate": 0
+  },
+  {
+    "material": "1X2 Shuttering(Ring Beam)",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Dpc",
+    "unit": "Roller",
+    "rate": 0
+  },
+  {
+    "material": "Binding wire",
+    "unit": "Pcs",
+    "rate": 0
+  },
+  {
+    "material": "Props(Mirunda)",
+    "unit": "Pcs",
+    "rate": 0
+  }
+]

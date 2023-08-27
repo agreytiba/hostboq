@@ -1,0 +1,27 @@
+[
+  {
+    "material": "Wall Putty",
+    "unit": "Bags",
+    "rate": 0
+  },
+  {
+    "material": "Emulsion Paint(20 ltrs)",
+    "unit": "Buckets",
+    "rate": 0
+  },
+  {
+    "material": "Alcali paint",
+    "unit": "Buckets",
+    "rate": 0
+  },
+  {
+    "material": "Sandpaper No.120",
+    "unit": "Meters",
+    "rate": 0
+  },
+  {
+    "material": "Scraper",
+    "unit": "Pcs",
+    "rate": 0
+  }
+]

@@ -1,24 +1,24 @@
 const mongoose = require("mongoose");
-const savedpreSchema = mongoose.Schema(
+const savedGypsumSchema = mongoose.Schema(
   {
     mapId: {
       type: mongoose.Schema.Types.ObjectId,
       required: [true, "weka map id"],
-       ref: "Map", 
+      ref: "Map",
     },
- isSaved: {
+    isSaved: {
       type: Boolean,
-       default:false, 
+      default: false,
     },
-    preData: [
+    gypsumData: [
       {
         quantity: {
           type: Number,
-       default:0,
+          default: 0,
         },
         materialId: {
           type: mongoose.Schema.Types.ObjectId,
-          ref: "Pre",   
+          ref: "Gypsum",
         },
       },
     ],
@@ -27,4 +27,4 @@ const savedpreSchema = mongoose.Schema(
     timestamps: true,
   }
 );
-module.exports = mongoose.model("Savedpre", savedpreSchema);
+module.exports = mongoose.model("SavedGypsum", savedGypsumSchema);

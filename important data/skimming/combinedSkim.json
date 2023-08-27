@@ -1,0 +1,38 @@
+[
+  {
+    "material": "Wall Putty",
+    "unit": "Bags",
+    "rate": 0,
+    "type": ["inside","outside"]
+  },
+  {
+    "material": "Emulsion Paint(20 ltrs)",
+    "unit": "Buckets",
+    "rate": 0,
+    "type": ["inside","outside"]
+  },
+  {
+    "material": "Sandpaper No.120",
+    "unit": "Meters",
+    "rate": 0,
+    "type": ["inside","outside"]
+  },
+  {
+    "material": "Alcali paint",
+    "unit": "Buckets",
+    "rate": 0,
+    "type": ["inside"]
+  },
+  {
+    "material": "Scraper",
+    "unit": "Pcs",
+    "rate": 0,
+    "type": ["inside"]
+  },
+  {
+    "material": "Binder Paint (20ltrs)",
+    "unit": "Buckets",
+    "rate": 0,
+    "type": ["inside","outside"]
+  }
+]

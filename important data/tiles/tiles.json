@@ -1,0 +1,32 @@
+[
+  {
+    "material": "40x40 floor tiles(1.92sqm)",
+    "unit": "Box",
+    "rate": 0
+  },
+  {
+    "material": "25x40 wall tiles(kitchen & Toil)",
+    "unit": "Box",
+    "rate": 0
+  },
+  {
+    "material": "Skirting tiles",
+    "unit": "Box",
+    "rate": 0
+  },
+  {
+    "material": "Cement",
+    "unit": "Bags",
+    "rate": 0
+  },
+  {
+    "material": "Grout",
+    "unit": "Kg",
+    "rate": 0
+  },
+  {
+    "material": "sand",
+    "unit": "Trips",
+    "rate": 0
+  }
+]
