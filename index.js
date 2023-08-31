@@ -161,6 +161,21 @@ app.use("/api/savedroofing", require("./routes/savedBoqRoutes/savedRoofingRoutes
 app.use("/api/savedtiles", require("./routes/savedBoqRoutes/savedTilesRoutes"));
 app.use("/api/savedwalling", require("./routes/savedBoqRoutes/savedWallingRoutes"));
 app.use("/api/savedpvcs", require("./routes/savedBoqRoutes/savedPvc"));
+// add recently
+app.use("/api/savedblinding", require("./routes/savedBoqRoutes/savedBlindingRoutes"));
+app.use("/api/savedStrips", require("./routes/savedBoqRoutes/savedStripRoutes"));
+app.use("/api/savedpads", require("./routes/savedBoqRoutes/SavedPadRoutes"));
+app.use("/api/savedwallfoundations", require("./routes/savedBoqRoutes/savedWallFoundRoutes"));
+app.use("/api/savedBeams", require("./routes/savedBoqRoutes/saveBeamRoutes"));
+app.use("/api/savedconcretes", require("./routes/savedBoqRoutes/savedConcreteRoutes"));
+app.use("/api/savedblandoutside", require("./routes/savedBoqRoutes/savedBlandOutsideRoutes"));
+app.use("/api/savedblandinside", require("./routes/savedBoqRoutes/savedBlandeInside"));
+app.use("/api/savedskiminside", require("./routes/savedBoqRoutes/savedSkimInsideRoutes"));
+app.use("/api/savedskimoutside", require("./routes/savedBoqRoutes/savedSkimOutsideRoutes"));
+app.use("/api/savedgrills", require("./routes/savedBoqRoutes/savedGrillRoutes"));
+app.use("/api/savedpanels", require("./routes/savedBoqRoutes/savedPanelRoutes"));
+app.use("/api/savedframes", require("./routes/savedBoqRoutes/savedFrameRoutes"));
+app.use("/api/savedshutters", require("./routes/savedBoqRoutes/savedShutterRoutes"));
 // use to change default error handler
 app.use(errorHandler);
 

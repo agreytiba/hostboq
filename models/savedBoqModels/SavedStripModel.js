@@ -1,0 +1,31 @@
+const mongoose = require("mongoose");
+const savedStripSchema = mongoose.Schema(
+  {
+    mapId: {
+      type: mongoose.Schema.Types.ObjectId,
+      required: [true, "weka map id"],
+       ref: "Map", 
+    },
+    isSaved: {
+      type: Boolean,
+       default:false, 
+    },
+
+    stripData: [
+      {
+        quantity: {
+          type: Number,
+       default:0,
+        },
+        materialId: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "Sub",   
+        },
+      },
+    ],
+  },
+  {
+    timestamps: true,
+  }
+);
+module.exports = mongoose.model("SavedStrip", savedStripSchema);
