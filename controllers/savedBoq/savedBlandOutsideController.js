@@ -6,7 +6,7 @@ const SavedBlandOutside = require("../../models/savedBoqModels/savedBlandOutside
 // @route GET /api/SavedBlandOutside
 // @access private
 const getSavedBlandOutsides = asyncHandler(async (req, res) => {
-    const savedData = await SavedBlandOutside.find().populate("insideData.materialId");
+    const savedData = await SavedBlandOutside.find().populate("outsideData.materialId");
   res.status(200).json(savedData);
 });
 
@@ -46,19 +46,19 @@ const updateSavedBlandOutside = asyncHandler(async (req, res) => {
       return res.status(404).json({ message: 'SavedBlandOutside not found' });
     }
 
-   // Find the index of the existing insideData entry with matching materialId
-    const existingIndex = Saved.insideData.findIndex(data => data.materialId == materialId);
+   // Find the index of the existing outsideData entry with matching materialId
+    const existingIndex = Saved.outsideData.findIndex(data => data.materialId == materialId);
 
     if (existingIndex !== -1) {
       // Update the quantity for the existing materialId
-      Saved.insideData[existingIndex].quantity = quantity;
+      Saved.outsideData[existingIndex].quantity = quantity;
      const updatedSaved= await Saved.save();
 
       res.status(200).json(updatedSaved);
     }
     else {
-      // Add quantity and materialId to insideData array
-      Saved.insideData.push({ quantity, materialId });
+      // Add quantity and materialId to outsideData array
+      Saved.outsideData.push({ quantity, materialId });
      const createdSaved= await Saved.save();
       res.status(200).json(createdSaved);
     }
