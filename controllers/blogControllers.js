@@ -6,7 +6,7 @@ const Blog =require('../models/blogModel')
 // @route GET /api/blogposts
 // @access  public
 const getBlogPosts =asyncHandler( async(req,res)=>{
-  const blogposts = await Blog.find()
+  const blogposts = await Blog.find().sort({ createdAt: -1 })
     res.status(200).json(blogposts)
 }
 ) 

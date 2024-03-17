@@ -4,6 +4,7 @@ const { getMe, loginUser, registerUser,getUsers,deleteUser,updateUser } = requir
 
 // psot and get method on have same adress
 router.route('/').post(registerUser).get(getUsers);
+router.route('/admin').post(registerUser)
 // route for login user (in simple way)
 router.route('/login').post(loginUser);
 

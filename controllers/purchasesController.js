@@ -6,7 +6,7 @@ const Purchase =require('../models/purchasesModel')
 // @route GET /api/purchases
 // @access private
 const getPurchases =asyncHandler( async(req,res)=>{
-  const purchase = await Purchase.find()
+  const purchase = await Purchase.find().sort({ createdAt: -1 })
     res.status(200).json(purchase)
 }
 ) 

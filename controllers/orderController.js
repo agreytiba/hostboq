@@ -8,7 +8,7 @@ const Purchase= require('../models/purchasesModel')
 // @access private
 const getOrders =asyncHandler( async(req,res)=>{
     try {
-    const orders = await Order.find().populate('purchaseId'); // Populate purchase data
+    const orders = await Order.find().populate('purchaseId').sort({ createdAt: -1 }) // Populate purchase data
     res.json(orders);
   } catch (error) {
   throw new Error(error)

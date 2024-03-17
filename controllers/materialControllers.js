@@ -6,7 +6,7 @@ const Material =require('../models/materialModel')
 // @route GET /api/materials
 // @access private
 const getMaterials =asyncHandler( async(req,res)=>{
-  const materials = await Material.find()
+  const materials = await Material.find().sort({ createdAt: -1 })
     res.status(200).json(materials)
 }
 ) 

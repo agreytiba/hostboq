@@ -8,7 +8,7 @@ const User = require('../models/userModel');
 // @access private
 const getUsers = asyncHandler(async (req, res) => {
 	// get all uses detail except password
-	const allUsers = await User.find({}, { password: 0 });
+	const allUsers = await User.find({}, { password: 0 }).sort({ createdAt: -1 });
 
 	if (allUsers) {
 		res.status(200).json(allUsers);
