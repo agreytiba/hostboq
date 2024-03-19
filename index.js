@@ -177,6 +177,12 @@ app.use("/api/savedpanels", require("./routes/savedBoqRoutes/savedPanelRoutes"))
 app.use("/api/savedframes", require("./routes/savedBoqRoutes/savedFrameRoutes"));
 app.use("/api/savedshutters", require("./routes/savedBoqRoutes/savedShutterRoutes"));
 // use to change default error handler
+app.use("/api/savedwaterIn", require("./routes/savedBoqRoutes/savedWaterInRoutes"));
+app.use("/api/savedwaterOut", require("./routes/savedBoqRoutes/savedWaterOutRoutes"));
+app.use("/api/savedfinishIn", require("./routes/savedBoqRoutes/savedFinishIn"));
+app.use("/api/savedseptic", require("./routes/savedBoqRoutes/savedSepticRoutes"));
+app.use("/api/savedsewageIn", require("./routes/savedBoqRoutes/savedSewageInRoutes"));
+// use to change default error handler
 app.use(errorHandler);
 
 app.listen(port, () => console.log(`server running in port number ${port}`));

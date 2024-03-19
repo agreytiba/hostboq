@@ -1,0 +1,380 @@
+[
+  {
+    "material": "PPR pipe 3/4",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["cleanIn","waterOut"]
+  },
+  {
+    "material": "PPR FM Elbow 3/4 x 1/2",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["cleanIn"]
+  },
+  {
+    "material": "PPR FM TEE 3/4 x 1/2",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["cleanIn" ]
+  },
+  {
+    "material": "PPR FM SOCKET 3/4 x 1/2",
+    "unit": "Number",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["cleanIn"]
+  },
+  {
+    "material": "PPR MIXER POINT 3/4 X 1/2",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["cleanIn"]
+  },
+  {
+    "material": "PPR Elbow 3/4 ",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["cleanIn","waterOut"]
+  },
+  {
+    "material": "PPR TEE 3/4 ",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["cleanIn","waterOut"]
+  },
+  {
+    "material": "PPR  Socket 3/4 ",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["cleanIn","waterOut"]
+  },
+  {
+    "material": "PPR  Cross Over 3/4 ",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["cleanIn"]
+  },
+  {
+    "material": "PPR  Plug 1/2",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["cleanIn"]
+  },
+  {
+    "material": "PPR Gate Valve 3/4",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["cleanIn"]
+  },
+  {
+    "material": "PVC Pipe Class B 4",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["sewIn","waterOut"]
+  },
+  {
+    "material": "PVC Elbow 4",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["waterOut"]
+  },
+  {
+    "material": "PVC Y Tee 4",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["waterOut"]
+  },
+  {
+    "material": "PVC 45 degree 4",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["waterOut"]
+  },
+  {
+    "material": "Expansion Elbow 4",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["waterOut"]
+  },
+  {
+    "material": "Vant Cape 4",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["waterOut"]
+  },
+  {
+    "material": "G Trup 4",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["waterOut"]
+  },
+  {
+    "material": "P Trup 4",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["waterOut"]
+  },
+  {
+    "material": "Tangit Glue Gm 800",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["waterOut"]
+  },
+  {
+    "material": "PVC Pipe Class B 1.1/2",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["sewIn"]
+  },
+  {
+    "material": "PVC Eblow 1.1/2",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["sewIn"]
+  },
+  {
+    "material": "PVC Tee 1.1/2",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["sewIn"]
+  },
+  {
+    "material": "PVC 45 degree 1.1/2",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["sewIn"]
+  },
+  {
+    "material": "PVC Y Tee 1.1/2",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["sewIn"]
+  },
+  {
+    "material": "PVC R.Bush 2x 1.1/2",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["sewIn"]
+  },
+  {
+    "material": "PVC Plug 1.1/2",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["sewIn"]
+  },
+  {
+    "material": "4 ways Trup",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["sewIn"]
+  },
+  {
+    "material": "Non Truo",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["sewIn"]
+  },
+  {
+    "material": "Tangit glue",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["sewIn"]
+  },
+  {
+    "material": "W.C Toilet",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["finishIn"]
+  },
+  {
+    "material": "W.C.B Complete",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+   "type": ["finishIn"]
+  },
+  {
+    "material": "Kitchen sink complete",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+   "type": ["finishIn"]
+  },
+  {
+    "material": "Ashton Heater",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+   "type": ["finishIn"]
+  },
+  {
+    "material": "Shower Mixer",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+   "type": ["finishIn"]
+  },
+  {
+    "material": "Shatak",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+   "type": ["finishIn"]
+  },
+  {
+    "material": "Flash Tank",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+   "type": ["finishIn"]
+  },
+  {
+    "material": "Angle Valve PEX",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+   "type": ["finishIn"]
+  },
+  {
+    "material": "Flexible Pipe",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+   "type": ["finishIn"]
+  },
+  {
+    "material": "Towel Rack",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+   "type": ["finishIn"]
+  },
+  {
+    "material": "Toilet Holders",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+   "type": ["finishIn"]
+  },
+  {
+    "material": "Soap Dish",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+   "type": ["finishIn"]
+  },
+  {
+    "material": "Basin Bolt pare",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+   "type": ["finishIn"]
+  },
+  {
+    "material": "Band Connector 4",
+    "unit": "Bottle",
+    "quantity": 0,
+    "rate": 0,
+   "type": ["finishIn"]
+  },
+  {
+    "material": "Thread tape",
+    "unit": "Bottle",
+    "quantity": 0,
+    "rate": 0,
+   "type": ["finishIn"]
+  },
+  {
+    "material": "Excavation",
+    "unit": "Holes",
+    "quantity": 0,
+    "rate": 0,
+    "type": ["septic"]
+  },
+  {
+    "material": "Walling",
+    "unit": "Holes",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["septic"]
+  },
+  {
+    "material": "Sand(4T)",
+    "unit": "Trips",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["septic"]
+  },
+  {
+    "material": "Blocks",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["septic"]
+  },
+  {
+    "material": "Cement",
+    "unit": "Bags",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["septic"]
+  },
+  {
+    "material": "Plywood",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["septic"]
+  },
+  {
+    "material": "2X4 wood",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["septic"]
+  },
+  {
+    "material": "Reinforcement Y12",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["septic"]
+  },
+  {
+    "material": "1x8 Wood",
+    "unit": "Pcs",
+    "quantity": 0,
+    "rate": 0,
+     "type": ["septic"]
+  }
+]

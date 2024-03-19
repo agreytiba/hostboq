@@ -14,6 +14,16 @@ const getMaps = asyncHandler(async (req, res) => {
   }
   res.status(200).json(maps);
 });
+
+// count under type check
+const getCountMaps = asyncHandler(async (req, res) => {
+  // const maps = await Map.find()
+  const counts = await Map.count();
+  if (!counts) {
+    res.json("no documents");
+  }
+  res.status(200).json(counts);
+});
 // @desc Get all maps under maboresho
 // @route GET /api/maps
 // @access private
@@ -26,6 +36,16 @@ const getMapsMaboresho = asyncHandler(async (req, res) => {
   }
   res.status(200).json(maps);
 });
+
+// count maboresho
+const getCountMaboresho = asyncHandler(async (req, res) => {
+  // const maps = await Map.find()
+  const counts = await Map.count({ status: "maboresho" });
+  if (!counts) {
+    res.json("no documents");
+  }
+  res.status(200).json(counts);
+});
 // @desc Get all maps under  type checker user
 // @route GET /api/maps
 // @access private
@@ -37,7 +57,15 @@ const getMapsTypeCheck = asyncHandler(async (req, res) => {
   }
   res.status(200).json(maps);
 });
-
+// count under type check
+const getCountTypeCheck = asyncHandler(async (req, res) => {
+  // const maps = await Map.find()
+  const counts = await Map.count({ status: "imetumwa"});
+  if (!counts) {
+    res.json("no documents");
+  }
+  res.status(200).json(counts);
+});
 // ge  all under  check unit user
 const getMapsUnitCheck = asyncHandler(async (req, res) => {
   // const maps = await Map.find()
@@ -47,6 +75,17 @@ const getMapsUnitCheck = asyncHandler(async (req, res) => {
   }
   res.status(200).json(maps);
 });
+
+
+// count under type check
+const getCountUnitCheck = asyncHandler(async (req, res) => {
+  // const maps = await Map.find()
+  const counts = await Map.count({ status: "imetumwa"});
+  if (!counts) {
+    res.json("no documents");
+  }
+  res.status(200).json(counts);
+});
 // get all  maps failed
 const getMapsFailed = asyncHandler(async (req, res) => {
   // const maps = await Map.find()
@@ -55,6 +94,16 @@ const getMapsFailed = asyncHandler(async (req, res) => {
     res.json("hakuna ramania iliyoko kwenye mfumo");
   }
   res.status(200).json(maps);
+});
+
+// count under type check
+const getCountFailed = asyncHandler(async (req, res) => {
+  // const maps = await Map.find()
+  const counts = await Map.count({ status: "failed" });
+  if (!counts) {
+    res.json("no documents");
+  }
+  res.status(200).json(counts);
 });
 // get all  maps failed
 const getMapsSuccess= asyncHandler(async (req, res) => {
@@ -66,6 +115,15 @@ const getMapsSuccess= asyncHandler(async (req, res) => {
   res.status(200).json(maps);
 });
 
+// count under type check
+const getCountBoq = asyncHandler(async (req, res) => {
+  // const maps = await Map.find()
+  const counts = await Map.count({ status: "boq" });
+  if (!counts) {
+    res.json("no documents");
+  }
+  res.status(200).json(counts);
+});
 // @desc set  upload map to system
 // @route POST /api/maps
 // @access private
@@ -165,5 +223,12 @@ module.exports = {
   getMapsMaboresho,
   getMapsTypeCheck,
   getMapsUnitCheck,
-  getMapsFailed,getMapsSuccess
+  getMapsFailed,
+  getMapsSuccess,
+  getCountMaboresho,
+  getCountTypeCheck,
+  getCountUnitCheck,
+  getCountFailed,
+  getCountBoq,
+  getCountMaps
 };

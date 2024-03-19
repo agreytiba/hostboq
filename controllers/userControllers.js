@@ -18,6 +18,25 @@ const getUsers = asyncHandler(async (req, res) => {
 	}
 });
 
+// count all users
+const getCountUsers = asyncHandler(async (req, res) => {
+  // const maps = await Map.find()
+  const counts = await User.count();
+  if (!counts) {
+    res.json("no documents");
+  }
+  res.status(200).json(counts);
+});
+// count all users with accessLevel user access level
+const getCountWithUsers = asyncHandler(async (req, res) => {
+  // const maps = await Map.find()
+  const counts = await User.count({accessLevel:"user"});
+  if (!counts) {
+    res.json("no documents");
+  }
+  res.status(200).json(counts);
+});
+
 // @desc  Register new user
 // @route POST /api/users
 // @access private
@@ -139,5 +158,7 @@ module.exports = {
 	getUsers,
 	loginUser,
 	deleteUser,
-	updateUser
+	updateUser,
+	getCountUsers,
+	getCountWithUsers
 };

@@ -10,7 +10,15 @@ const getBlogPosts =asyncHandler( async(req,res)=>{
     res.status(200).json(blogposts)
 }
 ) 
-
+// count blog
+const getCountBlogPosts = asyncHandler(async (req, res) => {
+  // const maps = await Map.find()
+  const counts = await Blog.count();
+  if (!counts) {
+    res.json("no documents");
+  }
+  res.status(200).json(counts);
+});
 
 
 // @desc set   create blog post to system
@@ -62,4 +70,4 @@ const deleteBlogPost = asyncHandler( async(req,res)=>{
     await Blog.findOneAndDelete(req.params.id)
     res.status(200).json("successfully deleted")
 })
-module.exports ={getBlogPosts, getBlogPost, updateBlogPost, setBlogPost, deleteBlogPost}
+module.exports ={getBlogPosts,getCountBlogPosts, getBlogPost, updateBlogPost, setBlogPost, deleteBlogPost}

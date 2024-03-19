@@ -16,7 +16,15 @@ const getOrders =asyncHandler( async(req,res)=>{
 }
 ) 
 
-
+// count under type check
+const getCountOrders = asyncHandler(async (req, res) => {
+  // const maps = await Map.find()
+  const counts = await Order.count();
+  if (!counts) {
+    res.json("no documents");
+  }
+  res.status(200).json(counts);
+});
 
 // @desc set order
 // @route POST /api/orders
@@ -67,4 +75,4 @@ const deleteOrder = asyncHandler( async(req,res)=>{
     await order.remove()
     res.status(200).json({id: req.params.id})
 })
-module.exports ={getOrder,getOrders,setOrder,updateOrder,deleteOrder}
+module.exports ={getOrder,getOrders,setOrder,updateOrder,deleteOrder,getCountOrders}
