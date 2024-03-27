@@ -9,6 +9,40 @@ const getSavedSkimInsides = asyncHandler(async (req, res) => {
     const savedData = await SavedSkimInside.find().populate("skimData.materialId");
   res.status(200).json(savedData);
 });
+// update is Saved state
+const updateStatus = asyncHandler(async (req, res) => {
+  const { boqStatus } = req.body
+  try {
+    if (boqStatus === "yes" ) {
+         const updatedMap = await SavedSkimInside.findByIdAndUpdate(
+      req.params.id,
+      { isSaved: true }, // Update isSaved to true
+      { new: true }
+      );
+       if (updatedMap) {
+      return res.status(200).json({ message: "boq completed" });
+    }
+    }
+    else {
+      const updatedMap = await SavedSkimInside.findByIdAndUpdate(
+      req.params.id,
+      { isSaved:false}, // Update isSaved to true
+      { new: true }
+      );
+      if (updatedMap) {
+  
+      return res.status(200).json({ message: "edit mode enabled" });
+    }
+    }
+ 
+
+   
+
+    return res.status(404).json({ error: "Record not found" });
+  } catch (error) {
+    return res.status(400).json({ error: error.message });
+  }
+});
 
 // @desc  create the SavedSkimInside
 // @route POST /api/SavedSkimInside
@@ -99,4 +133,5 @@ module.exports = {
   updateSavedSkimInside,
   setSavedSkimInside,
   deleteSavedSkimInside,
+  updateStatus
 };

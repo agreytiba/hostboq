@@ -9,7 +9,40 @@ const getFrames = asyncHandler(async (req, res) => {
     const savedElectri = await Frame.find().populate("frameData.materialId");
   res.status(200).json(savedElectri);
 });
+// update is Saved state
+const updateStatus = asyncHandler(async (req, res) => {
+  const { boqStatus } = req.body
+  try {
+    if (boqStatus === "yes" ) {
+         const updatedMap = await Frame.findByIdAndUpdate(
+      req.params.id,
+      { isSaved: true }, // Update isSaved to true
+      { new: true }
+      );
+       if (updatedMap) {
+      return res.status(200).json({ message: "boq completed" });
+    }
+    }
+    else {
+      const updatedMap = await Frame.findByIdAndUpdate(
+      req.params.id,
+      { isSaved:false}, // Update isSaved to true
+      { new: true }
+      );
+      if (updatedMap) {
+  
+      return res.status(200).json({ message: "edit mode enabled" });
+    }
+    }
+ 
 
+   
+
+    return res.status(404).json({ error: "Record not found" });
+  } catch (error) {
+    return res.status(400).json({ error: error.message });
+  }
+});
 // @desc  create the Frame
 // @route POST /api/Frame
 // @access private
@@ -99,4 +132,5 @@ module.exports = {
   updateFrame,
   setFrame,
   deleteFrame,
+  updateStatus
 };

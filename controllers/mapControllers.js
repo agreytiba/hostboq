@@ -10,7 +10,7 @@ const getMaps = asyncHandler(async (req, res) => {
 
   const maps = await Map.find().sort({ createdAt: -1 });
   if (!maps) {
-    res.json("hakuna ramania iliyoko kwenye mfumo");
+    res.json({error: "hakuna ramania iliyoko kwenye mfumo"});
   }
   res.status(200).json(maps);
 });
@@ -20,7 +20,7 @@ const getCountMaps = asyncHandler(async (req, res) => {
   // const maps = await Map.find()
   const counts = await Map.count();
   if (!counts) {
-    res.json("no documents");
+    res.json({error: "no documents"});
   }
   res.status(200).json(counts);
 });
@@ -32,7 +32,7 @@ const getMapsMaboresho = asyncHandler(async (req, res) => {
 
   const maps = await Map.find({ status: "maboresho" }).sort({ createdAt: -1 });
   if (!maps) {
-    res.json("hakuna ramania iliyoko kwenye mfumo");
+    res.json({error: "hakuna ramania iliyoko kwenye mfumo"});
   }
   res.status(200).json(maps);
 });
@@ -42,7 +42,7 @@ const getCountMaboresho = asyncHandler(async (req, res) => {
   // const maps = await Map.find()
   const counts = await Map.count({ status: "maboresho" });
   if (!counts) {
-    res.json("no documents");
+    res.json({error: "no documents"});
   }
   res.status(200).json(counts);
 });
@@ -53,7 +53,7 @@ const getMapsTypeCheck = asyncHandler(async (req, res) => {
   // const maps = await Map.find()
   const maps = await Map.find({ status: "imetumwa" }).sort({ createdAt: -1 });
   if (!maps) {
-    res.json("hakuna ramania iliyoko kwenye mfumo");
+    res.json({error: "hakuna ramania iliyoko kwenye mfumo"});
   }
   res.status(200).json(maps);
 });
@@ -62,7 +62,7 @@ const getCountTypeCheck = asyncHandler(async (req, res) => {
   // const maps = await Map.find()
   const counts = await Map.count({ status: "imetumwa"});
   if (!counts) {
-    res.json("no documents");
+    res.json({error: "no documents"});
   }
   res.status(200).json(counts);
 });
@@ -71,7 +71,7 @@ const getMapsUnitCheck = asyncHandler(async (req, res) => {
   // const maps = await Map.find()
   const maps = await Map.find({ status: "vipimo" }).sort({ createdAt: -1 });
   if (!maps) {
-    res.json("hakuna ramania iliyoko kwenye mfumo");
+    res.json({ error: "hakuna ramania iliyoko kwenye mfumo" });
   }
   res.status(200).json(maps);
 });
@@ -82,7 +82,7 @@ const getCountUnitCheck = asyncHandler(async (req, res) => {
   // const maps = await Map.find()
   const counts = await Map.count({ status: "imetumwa"});
   if (!counts) {
-    res.json("no documents");
+    res.json({error: "no documents"});
   }
   res.status(200).json(counts);
 });
@@ -91,7 +91,7 @@ const getMapsFailed = asyncHandler(async (req, res) => {
   // const maps = await Map.find()
   const maps = await Map.find({ status: "failed" }).sort({ createdAt: -1 });
   if (!maps) {
-    res.json("hakuna ramania iliyoko kwenye mfumo");
+    res.json({error: "hakuna ramania iliyoko kwenye mfumo"});
   }
   res.status(200).json(maps);
 });
@@ -101,7 +101,7 @@ const getCountFailed = asyncHandler(async (req, res) => {
   // const maps = await Map.find()
   const counts = await Map.count({ status: "failed" });
   if (!counts) {
-    res.json("no documents");
+    res.json({errror: "no documents"});
   }
   res.status(200).json(counts);
 });
@@ -110,7 +110,7 @@ const getMapsSuccess= asyncHandler(async (req, res) => {
   // const maps = await Map.find()
   const maps = await Map.find({ status:"boq" }).sort({ createdAt: -1 });
   if (!maps) {
-    res.json("hakuna ramania iliyoko kwenye mfumo");
+    res.json({error: "hakuna ramania iliyoko kwenye mfumo"});
   }
   res.status(200).json(maps);
 });
@@ -120,7 +120,7 @@ const getCountBoq = asyncHandler(async (req, res) => {
   // const maps = await Map.find()
   const counts = await Map.count({ status: "boq" });
   if (!counts) {
-    res.json("no documents");
+    res.json({error: "no documents"});
   }
   res.status(200).json(counts);
 });
@@ -130,8 +130,7 @@ const getCountBoq = asyncHandler(async (req, res) => {
 const setMap = asyncHandler(async (req, res) => {
   const data = req.body;
   if (!data) {
-    res.status(400);
-    throw new Error("jaza form");
+    res.status(400).json({error: "jaza form"});
   }
   const map = await Map.create(data);
   res.status(200).json(map);
@@ -142,8 +141,7 @@ const setMap = asyncHandler(async (req, res) => {
 const updateMapdetails = asyncHandler(async (req, res) => {
   const mapDetails = await Map.findById(req.params.id);
   if (!mapDetails) {
-    res.status(400);
-    throw new Error("Hii ramani haipo");
+    res.status(400).json({error: "Hii ramani haipo"});
   }
 
   // Check if the request body contains a 'status' property

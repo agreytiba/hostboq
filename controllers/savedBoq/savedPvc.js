@@ -1,6 +1,6 @@
 const asyncHandler = require("express-async-handler");
 
-const savedPvc = require("../../models/savedBoqModels/savedPvc");
+const Savedpvc = require("../../models/savedBoqModels/savedPvc");
 
 // @desc Get all savedpvc add
 // @route GET /api/savedpvcs
@@ -10,6 +10,41 @@ const getSavedPvcs = asyncHandler(async (req, res) => {
   res.status(200).json(savedpvcs);
 });
 
+
+// update is Saved state
+const updateStatus = asyncHandler(async (req, res) => {
+  const { boqStatus } = req.body
+  try {
+    if (boqStatus === "yes" ) {
+         const updatedMap = await Savedpvc.findByIdAndUpdate(
+      req.params.id,
+      { isSaved: true }, // Update isSaved to true
+      { new: true }
+      );
+       if (updatedMap) {
+      return res.status(200).json({ message: "boq completed" });
+    }
+    }
+    else {
+      const updatedMap = await Savedpvc.findByIdAndUpdate(
+      req.params.id,
+      { isSaved:false}, // Update isSaved to true
+      { new: true }
+      );
+      if (updatedMap) {
+  
+      return res.status(200).json({ message: "edit mode enabled" });
+    }
+    }
+ 
+
+   
+
+    return res.status(404).json({ error: "Record not found" });
+  } catch (error) {
+    return res.status(400).json({ error: error.message });
+  }
+});
 // @desc  create the savedpvcs
 // @route POST /api/savedpvcs
 // @access private
@@ -18,15 +53,15 @@ const setSavedPvc = asyncHandler(async (req, res) => {
 
   try {
     // Check if a record with the provided mapId exists
-    const existingSavedPvc = await savedPvc.findOne({ mapId });
+    const existingSavedPvc = await Savedpvc.findOne({ mapId });
 
     if (existingSavedPvc) {
       // Respond with existing data
       return res.status(200).json(existingSavedPvc);
     }
 
-    // Create a new savedPvc record if it doesn't exist
-    const newSavedPvc = await savedPvc.create(req.body);
+    // Create a new Savedpvc record if it doesn't exist
+    const newSavedPvc = await Savedpvc.create(req.body);
     res.status(201).json(newSavedPvc);
   } catch (error) {
     res.status(400).json({ error: error.message });
@@ -41,26 +76,26 @@ const updateSavedPvc = asyncHandler(async (req, res) => {
   const { quantity, materialId } = req.body;
 
   try {
-    const savedPvc = await savedPvc.findById(id);
-    if (!savedPvc) {
-      return res.status(404).json({ message: 'savedPvc not found' });
+    const Savedpvc = await Savedpvc.findById(id);
+    if (!Savedpvc) {
+      return res.status(404).json({ message: 'Savedpvc not found' });
     }
 
    // Find the index of the existing pvcData entry with matching materialId
-    const existingIndex = savedPvc.pvcData.findIndex(data => data.materialId == materialId);
+    const existingIndex = Savedpvc.pvcData.findIndex(data => data.materialId == materialId);
 
 
     if (existingIndex !== -1) {
       // Update the quantity for the existing materialId
-      savedPvc.pvcData[existingIndex].quantity = quantity;
-     const updatedSaved= await savedPvc.save();
+      Savedpvc.pvcData[existingIndex].quantity = quantity;
+     const updatedSaved= await Savedpvc.save();
 
       res.status(200).json(updatedSaved);
     }
     else {
       // Add quantity and materialId to pvcData array
-      savedPvc.pvcData.push({ quantity, materialId });
-     const createdSaved= await savedPvc.save();
+      Savedpvc.pvcData.push({ quantity, materialId });
+     const createdSaved= await Savedpvc.save();
       res.status(200).json(createdSaved);
     }
 
@@ -75,7 +110,7 @@ const updateSavedPvc = asyncHandler(async (req, res) => {
 // @route GET /api/materails/:id
 // @access  private
 const getSavedPvc = asyncHandler(async (req, res) => {
-  const data = await savedPvc.findById(req.params.id);
+  const data = await Savedpvc.findById(req.params.id);
   res.status(200).json(data);
 });
 
@@ -83,7 +118,7 @@ const getSavedPvc = asyncHandler(async (req, res) => {
 // @route DELETE /api/savedpvcs/:id
 // @access private
 const deleteSavedPre = asyncHandler(async (req, res) => {
-  const singleData = await savedPvc.findById(req.params.id);
+  const singleData = await Savedpvc.findById(req.params.id);
 
   // check for the singleData
   if (!singleData) {
@@ -91,7 +126,7 @@ const deleteSavedPre = asyncHandler(async (req, res) => {
     throw new Error("ramani haipo");
   }
 
-  await savedPvc.findOneAndDelete(req.params.id);
+  await Savedpvc.findOneAndDelete(req.params.id);
   res.status(200).json("material successfully deleted");
 });
 module.exports = {
@@ -100,4 +135,5 @@ module.exports = {
   updateSavedPvc,
   setSavedPvc,
   deleteSavedPre,
+  updateStatus
 };
