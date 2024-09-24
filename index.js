@@ -41,6 +41,17 @@ app.post("/upload-pdf", upload.array("pdf", 10), async (req, res) => {
     res.status(500).json({ error: "Failed to upload the PDFs" });
   }
 });
+
+// API endpoint to receive and save multiple PDF files
+app.post("/", async (req, res) => {
+  try {
+   
+    res.status(201).json("test");
+  } catch (error) {
+    console.error("Error uploading PDFs:", error);
+    res.status(500).json("Failed to upload the PDFs" );
+  }
+});
 // END OF UPLOAD TO DATABASE
 
 
